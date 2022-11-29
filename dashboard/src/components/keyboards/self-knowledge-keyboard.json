@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_keyboards_self_knowledge_keyboards",
+  "info": {
+    "displayName": "SELF_KNOWLEDGE_KEYBOARD",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "BUTTON": {
+      "displayName": "BUTTON",
+      "type": "component",
+      "repeatable": true,
+      "component": "keyboards.button"
+    }
+  }
+}

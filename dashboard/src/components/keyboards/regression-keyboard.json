@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_keyboards_regression_keyboards",
+  "info": {
+    "displayName": "REGRESSION_KEYBOARD",
+    "icon": "backward",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {}
+}

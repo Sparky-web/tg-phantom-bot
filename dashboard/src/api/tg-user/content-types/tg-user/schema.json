@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tg_users",
+  "info": {
+    "singularName": "tg-user",
+    "pluralName": "tg-users",
+    "displayName": "tgUsers",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "uId": {
+      "type": "biginteger"
+    },
+    "username": {
+      "type": "string"
+    },
+    "locale": {
+      "type": "string",
+      "default": "ru",
+      "required": false,
+      "regex": "ru|en|es"
+    },
+    "name": {
+      "type": "string"
+    },
+    "package": {
+      "type": "string"
+    },
+    "deposit_date": {
+      "type": "string"
+    },
+    "withdraw_date": {
+      "type": "string"
+    },
+    "balance": {
+      "type": "integer"
+    }
+  }
+}

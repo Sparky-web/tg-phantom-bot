@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_keyboards_money_freedom_keyboards",
+  "info": {
+    "displayName": "MONEY_FREEDOM_KEYBOARD",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "COURSE_BTN": {
+      "type": "component",
+      "repeatable": false,
+      "component": "keyboards.button"
+    },
+    "MANAGEMENT_BTN": {
+      "type": "component",
+      "repeatable": false,
+      "component": "keyboards.button"
+    }
+  }
+}

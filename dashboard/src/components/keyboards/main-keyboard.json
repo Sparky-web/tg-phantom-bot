@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_keyboards_main_keyboards",
+  "info": {
+    "displayName": "MAIN_KEYBOARD",
+    "icon": "hourglass-start",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "LK_BTN": {
+      "type": "component",
+      "repeatable": false,
+      "component": "keyboards.button"
+    },
+    "PARTNERSHIP_BTN": {
+      "type": "component",
+      "repeatable": false,
+      "component": "keyboards.button"
+    },
+    "CHARITY_BTN": {
+      "type": "component",
+      "repeatable": false,
+      "component": "keyboards.button"
+    },
+    "CHOOSE_LOCALE": {
+      "type": "component",
+      "repeatable": false,
+      "component": "keyboards.button"
+    }
+  }
+}

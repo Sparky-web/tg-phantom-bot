@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_keyboards_buttons",
+  "info": {
+    "displayName": "BUTTON",
+    "icon": "compress",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "BTN_TEXT": {
+      "type": "string"
+    },
+    "AFTER": {
+      "type": "text"
+    },
+    "IMAGE": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

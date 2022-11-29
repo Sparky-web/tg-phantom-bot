@@ -1,0 +1,365 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::config.config",
+  "value": {
+    "uid": "api::config.config",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "START_TEXT": {
+        "edit": {
+          "label": "START_TEXT",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "START_TEXT",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "START_IMAGE": {
+        "edit": {
+          "label": "START_IMAGE",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "START_IMAGE",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "MAIN_KEYBOARD": {
+        "edit": {
+          "label": "MAIN_KEYBOARD",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "MAIN_KEYBOARD",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "RELATIONSHIP_KEYBOARD": {
+        "edit": {
+          "label": "RELATIONSHIP_KEYBOARD",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "RELATIONSHIP_KEYBOARD",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "HYPNOTHERAPY_KEYBOARD": {
+        "edit": {
+          "label": "HYPNOTHERAPY_KEYBOARD",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "HYPNOTHERAPY_KEYBOARD",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "PAYMENT_KEYBOARD": {
+        "edit": {
+          "label": "PAYMENT_KEYBOARD",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "PAYMENT_KEYBOARD",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "MONEY_FREEDOOM_KEYBOARD": {
+        "edit": {
+          "label": "MONEY_FREEDOOM_KEYBOARD",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "MONEY_FREEDOOM_KEYBOARD",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "COURSE_KEYBOARD": {
+        "edit": {
+          "label": "COURSE_KEYBOARD",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "COURSE_KEYBOARD",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "BACK_BTN": {
+        "edit": {
+          "label": "BACK_BTN",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "BACK_BTN",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "adminId": {
+        "edit": {
+          "label": "adminId",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "adminId",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "adminNotification": {
+        "edit": {
+          "label": "adminNotification",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "adminNotification",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "operatorText": {
+        "edit": {
+          "label": "operatorText",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "operatorText",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "REGRESSION_KEYBOARD": {
+        "edit": {
+          "label": "REGRESSION_KEYBOARD",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "REGRESSION_KEYBOARD",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "SELF_KNOWLEDGE_KEYBOARD": {
+        "edit": {
+          "label": "SELF_KNOWLEDGE_KEYBOARD",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "SELF_KNOWLEDGE_KEYBOARD",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "HYPNO_KEYBOARD": {
+        "edit": {
+          "label": "HYPNO_KEYBOARD",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "HYPNO_KEYBOARD",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "START_TEXT",
+        "START_IMAGE",
+        "MAIN_KEYBOARD"
+      ],
+      "edit": [
+        [
+          {
+            "name": "START_TEXT",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "START_IMAGE",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "MAIN_KEYBOARD",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "HYPNO_KEYBOARD",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "PAYMENT_KEYBOARD",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "MONEY_FREEDOOM_KEYBOARD",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "COURSE_KEYBOARD",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "BACK_BTN",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "adminId",
+            "size": 4
+          },
+          {
+            "name": "adminNotification",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "operatorText",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "RELATIONSHIP_KEYBOARD",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "HYPNOTHERAPY_KEYBOARD",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "REGRESSION_KEYBOARD",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "SELF_KNOWLEDGE_KEYBOARD",
+            "size": 12
+          }
+        ]
+      ],
+      "editRelations": []
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

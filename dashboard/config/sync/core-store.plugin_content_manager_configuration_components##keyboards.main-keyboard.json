@@ -1,0 +1,120 @@
+{
+  "key": "plugin_content_manager_configuration_components::keyboards.main-keyboard",
+  "value": {
+    "uid": "keyboards.main-keyboard",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "HYPNOTHERAPY_BTN": {
+        "edit": {
+          "label": "HYPNOTHERAPY_BTN",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "HYPNOTHERAPY_BTN",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "MONEY_FREEDOM_BTN": {
+        "edit": {
+          "label": "MONEY_FREEDOM_BTN",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "MONEY_FREEDOM_BTN",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "RELATIONSHIP_BTN": {
+        "edit": {
+          "label": "RELATIONSHIP_BTN",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "RELATIONSHIP_BTN",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "CHOOSE_LOCALE": {
+        "edit": {
+          "label": "CHOOSE_LOCALE",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "CHOOSE_LOCALE",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "MONEY_FREEDOM_BTN",
+        "RELATIONSHIP_BTN",
+        "HYPNOTHERAPY_BTN"
+      ],
+      "edit": [
+        [
+          {
+            "name": "MONEY_FREEDOM_BTN",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "RELATIONSHIP_BTN",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "HYPNOTHERAPY_BTN",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "CHOOSE_LOCALE",
+            "size": 12
+          }
+        ]
+      ],
+      "editRelations": []
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

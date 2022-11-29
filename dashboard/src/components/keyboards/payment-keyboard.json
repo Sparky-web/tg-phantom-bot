@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_keyboards_payment_keyboards",
+  "info": {
+    "displayName": "PAYMENT_KEYBOARD",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "PAY_BTN": {
+      "type": "component",
+      "repeatable": false,
+      "component": "keyboards.button"
+    },
+    "QUESTION_BTN": {
+      "type": "component",
+      "repeatable": false,
+      "component": "keyboards.button"
+    }
+  }
+}

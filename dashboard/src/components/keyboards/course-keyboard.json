@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_keyboards_course_keyboards",
+  "info": {
+    "displayName": "COURSE_KEYBOARD",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "GROUP_BTN": {
+      "type": "component",
+      "repeatable": false,
+      "component": "keyboards.button"
+    },
+    "VIP_BTN": {
+      "type": "component",
+      "repeatable": false,
+      "component": "keyboards.button"
+    },
+    "HYPNO500_BTN": {
+      "type": "component",
+      "repeatable": false,
+      "component": "keyboards.button"
+    }
+  }
+}

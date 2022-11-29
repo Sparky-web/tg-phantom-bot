@@ -1,0 +1,43 @@
+{
+  "name": "Public",
+  "description": "Default role given to unauthenticated user.",
+  "type": "public",
+  "permissions": [
+    {
+      "action": "api::config.config.delete"
+    },
+    {
+      "action": "api::config.config.find"
+    },
+    {
+      "action": "api::config.config.update"
+    },
+    {
+      "action": "api::tg-user.tg-user.create"
+    },
+    {
+      "action": "api::tg-user.tg-user.delete"
+    },
+    {
+      "action": "api::tg-user.tg-user.find"
+    },
+    {
+      "action": "api::tg-user.tg-user.findOne"
+    },
+    {
+      "action": "api::tg-user.tg-user.update"
+    },
+    {
+      "action": "plugin::users-permissions.auth.callback"
+    },
+    {
+      "action": "plugin::users-permissions.auth.connect"
+    },
+    {
+      "action": "plugin::users-permissions.auth.register"
+    },
+    {
+      "action": "plugin::users-permissions.user.me"
+    }
+  ]
+}
