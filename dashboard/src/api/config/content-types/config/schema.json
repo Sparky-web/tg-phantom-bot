@@ -70,6 +70,14 @@
         }
       },
       "component": "keyboards.button"
+    },
+    "SELECT_LANGUAGE_TEXT": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "text"
     }
   }
 }

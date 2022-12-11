@@ -7,9 +7,10 @@ import strapi from "../modules/strapi.js";
 import { getKeyboard } from "./keyboards.js";
 
 export const selectLanguage = async (ctx) => {
+    const config = ctx.config
     await sendMessage({
         ctx,
-        message: "Русский ⬇️English ⬇",
+        message: config.SELECT_LANGUAGE_TEXT,
         keyboard: getKeyboard(ctx, "locale").reply()
     })
 

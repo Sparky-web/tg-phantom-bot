@@ -26,12 +26,17 @@ export const createMainScene = composeWizardScene(
                 handler: (ctx) => {
                     ctx.reply(
                         config.MAIN_KEYBOARD.LK_BTN.AFTER
-                            .replace(/\{username\}/g, ctx.user.username)
-                            .replace(/\{name\}/g, ctx.user.name)
-                            .replace(/\{package\}/g, ctx.user.package)
-                            .replace(/\{deposit_date\}/g, ctx.user.deposit_date)
-                            .replace(/\{withdraw_date\}/g, ctx.user.withdraw_date)
-                            .replace(/\{balance\}/g, ctx.user.balance + " $")
+                            .replaceAll(new RegExp("(?<=\{)(.*?)(?=\})", "g"), r => {
+                                return ctx.user[r] || ""
+                            })
+                            .replace(/\{|\}/ig, "")
+
+                        // .replace(/\{username\}/g, ctx.user.username)
+                        // .replace(/\{name\}/g, ctx.user.name)
+                        // .replace(/\{package\}/g, ctx.user.package)
+                        // .replace(/\{deposit_date\}/g, ctx.user.deposit_date)
+                        // .replace(/\{withdraw_date\}/g, ctx.user.withdraw_date)
+                        // .replace(/\{balance\}/g, ctx.user.balance + " $")
                     )
                 }
             },
