@@ -119,8 +119,10 @@ export const writeHistory = (currentScene, ctx) => {
 }
 
 export const changeLocale = async (ctx, locale) => {
+    const [user] = await strapi.get("tg-users", { filters: { uId: ctx.chat.id } })
+
     await strapi.update("tg-users", {
-        ...ctx.user,
+        id: user.id,
         locale
     })
 

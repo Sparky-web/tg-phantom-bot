@@ -22,7 +22,7 @@ const userMiddleware = async (ctx, next) => {
 }
 
 const configMiddleware = async (ctx, next) => {
-    ctx.config = getConfig(ctx.user?.locale)
+    ctx.config = getConfig(ctx.user?.locale || "ru")
     await next()
 }
 
