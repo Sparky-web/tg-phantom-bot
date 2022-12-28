@@ -45,6 +45,7 @@ export const createMainScene = composeWizardScene(
                 scene: scenes.PARTNERSHIP
             },
             {button: config.MAIN_KEYBOARD.CHARITY_BTN},
+            {button: config.MAIN_KEYBOARD.DEALS_BTN},
             {
                 button: config.MAIN_KEYBOARD.CHOOSE_LOCALE,
                 handler: async ctx => {

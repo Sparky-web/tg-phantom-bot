@@ -21,7 +21,7 @@ export const revalidateConfig = async () => {
     }
 }
 
-export const getConfig = (locale) => config[locale]
+export const getConfig = (locale) => config[locale] || config['ru']
 
 setInterval(async () => {
     revalidateConfig()

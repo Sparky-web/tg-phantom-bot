@@ -26,6 +26,11 @@
       "type": "component",
       "repeatable": false,
       "component": "keyboards.button"
+    },
+    "DEALS_BTN": {
+      "type": "component",
+      "repeatable": false,
+      "component": "keyboards.button"
     }
   }
 }

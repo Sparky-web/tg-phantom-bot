@@ -13,7 +13,7 @@ const getKeyboard = (ctx, keyboard = "main", addButtons) => {
         case 'main': {
             result = ([
                 toButtons([config.MAIN_KEYBOARD.LK_BTN, config.MAIN_KEYBOARD.PARTNERSHIP_BTN]),
-                toButtons([config.MAIN_KEYBOARD.CHARITY_BTN]),
+                toButtons([config.MAIN_KEYBOARD.CHARITY_BTN, config.MAIN_KEYBOARD.DEALS_BTN]),
                 toButtons([config.MAIN_KEYBOARD.CHOOSE_LOCALE])
             ])
             break
