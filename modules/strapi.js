@@ -2,7 +2,7 @@ import _axios from "axios"
 import qs from "qs"
 
 const axios = _axios.create({
-    baseURL: `http://0.0.0.0:${process.env.STRAPI_PORT}/api`
+    baseURL: `http://127.0.0.1:${process.env.STRAPI_PORT}/api`
 })
 
 export async function get(type, filters, options = {}) {

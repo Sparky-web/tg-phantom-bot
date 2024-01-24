@@ -4,13 +4,13 @@ import scenes from "../scene-types.js";
 import { handleBackBtn } from "../tg-helpers.js";
 import { sendMessage } from "../tg-helpers.js";
 
-export const createPartnershipScene = composeWizardScene(
+export const createQuestionScene = composeWizardScene(
     async (ctx) => {
-        const button = ctx.config.MAIN_KEYBOARD.PARTNERSHIP_BTN
+        const button = ctx.session.btnClicked
         await sendMessage({
             ctx,
             message: button.AFTER, 
-            keyboard: getKeyboard(ctx, "partnership").reply(),
+            keyboard: getKeyboard(ctx, "question").reply(),
             imageStrapi: button.IMAGE
         })
         ctx.wizard.next()
@@ -19,18 +19,10 @@ export const createPartnershipScene = composeWizardScene(
         const config = ctx.config
 
         handleMenuAction([
-            ...config.PARTNERSHIP_KEYBOARD.map(btn => ({
-                // button: btn,
-                // scene: scenes.QUESTION
-                message: btn.BTN_TEXT,
-                handler: async (ctx) => {
-                    ctx.session.btnClicked = btn
-                    ctx.scene.enter(scenes.QUESTION)
-                }
-            })),
+            {
+                button: config.ASK_QUESTION_BTN,
+            },
             handleBackBtn(ctx)
         ])(ctx)
-
-
     }
 );

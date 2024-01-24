@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "LK_BTN": {
+    "MY_PROJECT_BTN": {
       "type": "component",
       "repeatable": false,
       "component": "keyboards.button"
@@ -23,11 +23,6 @@
       "component": "keyboards.button"
     },
     "CHOOSE_LOCALE": {
-      "type": "component",
-      "repeatable": false,
-      "component": "keyboards.button"
-    },
-    "DEALS_BTN": {
       "type": "component",
       "repeatable": false,
       "component": "keyboards.button"

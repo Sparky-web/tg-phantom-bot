@@ -22,30 +22,14 @@ export const createMainScene = composeWizardScene(
 
         handleMenuAction([
             {
-                button: config.MAIN_KEYBOARD.LK_BTN,
-                handler: (ctx) => {
-                    ctx.reply(
-                        config.MAIN_KEYBOARD.LK_BTN.AFTER
-                            .replaceAll(new RegExp("(?<=\{)(.*?)(?=\})", "g"), r => {
-                                return ctx.user[r] || ""
-                            })
-                            .replace(/\{|\}/ig, "")
-
-                        // .replace(/\{username\}/g, ctx.user.username)
-                        // .replace(/\{name\}/g, ctx.user.name)
-                        // .replace(/\{package\}/g, ctx.user.package)
-                        // .replace(/\{deposit_date\}/g, ctx.user.deposit_date)
-                        // .replace(/\{withdraw_date\}/g, ctx.user.withdraw_date)
-                        // .replace(/\{balance\}/g, ctx.user.balance + " $")
-                    )
-                }
+                button: config.MAIN_KEYBOARD.MY_PROJECT_BTN,
+                scene: scenes.MY_PROJECT
             },
             {
                 button: config.MAIN_KEYBOARD.PARTNERSHIP_BTN,
                 scene: scenes.PARTNERSHIP
             },
             {button: config.MAIN_KEYBOARD.CHARITY_BTN},
-            {button: config.MAIN_KEYBOARD.DEALS_BTN},
             {
                 button: config.MAIN_KEYBOARD.CHOOSE_LOCALE,
                 handler: async ctx => {

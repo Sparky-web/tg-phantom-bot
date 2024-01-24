@@ -12,8 +12,8 @@ const getKeyboard = (ctx, keyboard = "main", addButtons) => {
     switch (keyboard) {
         case 'main': {
             result = ([
-                toButtons([config.MAIN_KEYBOARD.LK_BTN, config.MAIN_KEYBOARD.PARTNERSHIP_BTN]),
-                toButtons([config.MAIN_KEYBOARD.CHARITY_BTN, config.MAIN_KEYBOARD.DEALS_BTN]),
+                toButtons([config.MAIN_KEYBOARD.MY_PROJECT_BTN, config.MAIN_KEYBOARD.PARTNERSHIP_BTN]),
+                toButtons([config.MAIN_KEYBOARD.CHARITY_BTN]),
                 toButtons([config.MAIN_KEYBOARD.CHOOSE_LOCALE])
             ])
             break
@@ -25,12 +25,25 @@ const getKeyboard = (ctx, keyboard = "main", addButtons) => {
             ])
             break
         }
+        case 'my-project': {
+            result = ([
+                ..._.chunk(toButtons(config.MY_PROJECT_KEYBOARD), 2),
+                toButtons([config.BACK_BTN])
+            ])
+            break
+        }
         case 'back': {
             result = ([
                 [config.BACK_BTN.BTN_TEXT]
             ])
             break
         }
+        case 'question': 
+            result = ([
+                toButtons([config.ASK_QUESTION_BTN]),
+                toButtons([config.BACK_BTN])
+            ])
+            break
         case 'locale': {
             result = ["Русский", "English"]
         }

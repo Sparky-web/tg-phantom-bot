@@ -7,6 +7,8 @@ import { getConfig } from '../modules/config.js'
 import { createMainScene } from './scenes/main.js'
 import {createPartnershipScene} from "./scenes/partnership.js";
 import { changeLocale, selectLanguage } from './tg-helpers.js'
+import { createMyProjectScene } from './scenes/myproject.js'
+import {createQuestionScene} from "./scenes/question.js"
 
 const userMiddleware = async (ctx, next) => {
     let [user] = await strapi.get("tg-users", { filters: { uId: ctx.chat.id } })
@@ -37,6 +39,8 @@ export const register = (bot) => {
     const stage = new Scenes.Stage([
         createMainScene(scenes.MAIN),
         createPartnershipScene(scenes.PARTNERSHIP),
+        createMyProjectScene(scenes.MY_PROJECT),
+        createQuestionScene(scenes.QUESTION)
     ])
 
     bot.use(userMiddleware)

@@ -59,11 +59,21 @@ export const sendMessage = async ({
         if (strapiImageUrl) imageUrl = `http://0.0.0.0:${process.env.STRAPI_PORT}${strapiImageUrl}`
 
         if (ctx) {
-            if (imageUrl) await ctx.replyWithPhoto({ url: imageUrl }, {
-                caption: message,
-                parse_mode: "MarkdownV2",
-                ...keyboard, ...options
-            })
+            if (imageUrl) {
+                if (imageUrl.endsWith('.gif')) {
+                    await ctx.replyWithAnimation({url: imageUrl}, {
+                        caption: message,
+                        parse_mode: "MarkdownV2",
+                        ...keyboard, ...options
+                    })
+                } else {
+                    await ctx.replyWithPhoto({ url: imageUrl }, {
+                        caption: message,
+                        parse_mode: "MarkdownV2",
+                        ...keyboard, ...options
+                    })
+                }
+            }
             else if (photo) await bot.telegram.sendPhoto(chatId, { photo }, {
                 caption: message,
                 parse_mode: "MarkdownV2",
@@ -75,11 +85,21 @@ export const sendMessage = async ({
             })
         }
         else if (chatId) {
-            if (imageUrl) await bot.telegram.sendPhoto(chatId, { url: imageUrl }, {
-                caption: message,
-                parse_mode: "MarkdownV2",
-                ...keyboard, ...options
-            })
+            if (imageUrl) {
+                if (imageUrl.endsWith('.gif')) {
+                    await bot.telegram.sendAnimation(chatId, {url: imageUrl}, {
+                        caption: message,
+                        parse_mode: "MarkdownV2",
+                        ...keyboard, ...options
+                    })
+                } else {
+                    await bot.telegram.sendPhoto(chatId, { url: imageUrl }, {
+                        caption: message,
+                        parse_mode: "MarkdownV2",
+                        ...keyboard, ...options
+                    })
+                }
+            }
             else if (photo) await bot.telegram.sendPhoto(chatId, { photo }, {
                 caption: message,
                 parse_mode: "MarkdownV2",

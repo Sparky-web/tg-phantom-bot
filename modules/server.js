@@ -7,4 +7,4 @@ app.all("/webhook", async (req, res) => {
     res.send("ok")
 })
 
-app.listen(process.env.WEBHOOK_PORT)
+app.listen(process.env.WEBHOOK_PORT, '127.0.0.1')
