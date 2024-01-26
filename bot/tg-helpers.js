@@ -61,7 +61,7 @@ export const sendMessage = async ({
         if (ctx) {
             if (imageUrl) {
                 if (imageUrl.endsWith('.gif')) {
-                    await ctx.replyWithAnimation({url: imageUrl}, {
+                    await ctx.replyWithVideo({url: imageUrl}, {
                         caption: message,
                         parse_mode: "MarkdownV2",
                         ...keyboard, ...options
@@ -87,7 +87,7 @@ export const sendMessage = async ({
         else if (chatId) {
             if (imageUrl) {
                 if (imageUrl.endsWith('.gif')) {
-                    await bot.telegram.sendAnimation(chatId, {url: imageUrl}, {
+                    await bot.telegram.sendVideo(chatId, {url: imageUrl}, {
                         caption: message,
                         parse_mode: "MarkdownV2",
                         ...keyboard, ...options
