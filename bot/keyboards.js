@@ -45,7 +45,7 @@ const getKeyboard = (ctx, keyboard = "main", addButtons) => {
             ])
             break
         case 'locale': {
-            result = ["Русский", "English"]
+            result = ["English", "Русский"]
         }
     }
 
