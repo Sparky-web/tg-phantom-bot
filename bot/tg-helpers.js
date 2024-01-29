@@ -52,7 +52,7 @@ export const sendMessage = async ({
     photo = null,
     options = {}
 }) => {
-    options = { ...options, link_preview: false }
+    options = { ...options, link_preview: false, disable_web_page_preview: true }
     message = telegramifyMarkdown(message)
     try {
         const strapiImageUrl = imageStrapi?.data?.attributes?.url
@@ -60,7 +60,7 @@ export const sendMessage = async ({
 
         if (ctx) {
             if (imageUrl) {
-                if (imageUrl.endsWith('.gif')) {
+                if (imageUrl.toLowerCase().endsWith('.mp4')) {
                     await ctx.replyWithVideo({url: imageUrl}, {
                         caption: message,
                         parse_mode: "MarkdownV2",
@@ -86,7 +86,7 @@ export const sendMessage = async ({
         }
         else if (chatId) {
             if (imageUrl) {
-                if (imageUrl.endsWith('.gif')) {
+                if (imageUrl.toLowerCase().endsWith('.mp4')) {
                     await bot.telegram.sendVideo(chatId, {url: imageUrl}, {
                         caption: message,
                         parse_mode: "MarkdownV2",
