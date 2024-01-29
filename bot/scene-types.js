@@ -4,7 +4,8 @@ const scenes = {
     PARTNERSHIP: "PARTNERSHIP",
     LOCALE: "LOCALE",
     MY_PROJECT: "MY_PROJECT",
-    QUESTION: "QUESTION"
+    QUESTION: "QUESTION",
+    HELP_ANIMALS: "HELP_ANIMALS"
 }
 
 export default scenes;

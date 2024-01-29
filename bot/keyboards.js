@@ -44,6 +44,12 @@ const getKeyboard = (ctx, keyboard = "main", addButtons) => {
                 toButtons([config.BACK_BTN])
             ])
             break
+        case 'help-animals': 
+            result = ([
+                toButtons([config.HELP_ANIMALS_BTN]),
+                toButtons([config.BACK_BTN])
+            ])
+            break
         case 'locale': {
             result = ["English", "Русский"]
         }
