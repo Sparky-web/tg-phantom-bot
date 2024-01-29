@@ -98,6 +98,16 @@
         }
       },
       "component": "keyboards.button"
+    },
+    "HELP_ANIMALS_BTN": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "keyboards.button"
     }
   }
 }

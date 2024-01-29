@@ -1,7 +1,7 @@
-import {getKeyboard} from "../keyboards.js";
+import { getKeyboard } from "../keyboards.js";
 import scenes from "../scene-types.js";
-import {composeWizardScene, handleMenuAction} from "./factory.js";
-import {selectLanguage, sendMessage} from "../tg-helpers.js";
+import { composeWizardScene, handleMenuAction } from "./factory.js";
+import { selectLanguage, sendMessage } from "../tg-helpers.js";
 
 export const createMainScene = composeWizardScene(
     async (ctx) => {
@@ -29,7 +29,13 @@ export const createMainScene = composeWizardScene(
                 button: config.MAIN_KEYBOARD.PARTNERSHIP_BTN,
                 scene: scenes.PARTNERSHIP
             },
-            {button: config.MAIN_KEYBOARD.CHARITY_BTN},
+            {
+                button: config.MAIN_KEYBOARD.CHARITY_BTN,
+                handler: async (ctx) => {
+                    ctx.session.btnClicked = config.MAIN_KEYBOARD.CHARITY_BTN
+                    ctx.scene.enter(scenes.HELP_ANIMALS)
+                }
+            },
             {
                 button: config.MAIN_KEYBOARD.CHOOSE_LOCALE,
                 handler: async ctx => {
