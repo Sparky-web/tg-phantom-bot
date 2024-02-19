@@ -20,6 +20,8 @@ const userMiddleware = async (ctx, next) => {
         locale: null
     })
 
+    console.log("message", ctx.message.text)
+
     ctx.user = user
     await next(ctx)
 }
