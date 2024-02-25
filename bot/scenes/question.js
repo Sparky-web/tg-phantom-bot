@@ -7,6 +7,7 @@ import { sendMessage } from "../tg-helpers.js";
 export const createQuestionScene = composeWizardScene(
     async (ctx) => {
         const button = ctx.session.btnClicked
+	    console.log(button)
         await sendMessage({
             ctx,
             message: button.AFTER, 
