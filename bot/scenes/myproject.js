@@ -11,7 +11,8 @@ export const createMyProjectScene = composeWizardScene(
             ctx,
             message: button.AFTER, 
             keyboard: getKeyboard(ctx, "my-project").reply(),
-            imageStrapi: button.IMAGE
+            imageStrapi: button.IMAGE,
+            imageUrl: button.imageUrl
         })
         ctx.wizard.next()
     },

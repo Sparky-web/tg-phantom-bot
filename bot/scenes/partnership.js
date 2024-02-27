@@ -11,7 +11,8 @@ export const createPartnershipScene = composeWizardScene(
             ctx,
             message: button.AFTER, 
             keyboard: getKeyboard(ctx, "partnership").reply(),
-            imageStrapi: button.IMAGE
+            imageStrapi: button.IMAGE,
+            imageUrl: button.imageUrl
         })
         ctx.wizard.next()
     },

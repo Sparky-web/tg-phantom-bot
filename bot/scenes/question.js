@@ -12,7 +12,8 @@ export const createQuestionScene = composeWizardScene(
             ctx,
             message: button.AFTER, 
             keyboard: getKeyboard(ctx, "question").reply(),
-            imageStrapi: button.IMAGE
+            imageStrapi: button.IMAGE,
+            imageUrl: button.imageUrl
         })
         ctx.wizard.next()
     },

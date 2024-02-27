@@ -35,19 +35,23 @@ export const handleMenuAction = (actions) => async (ctx, done) => {
         let text = action.message
         let messageToSend = null
         let imageToSend = null
+        let imageUrl = null
 
         if (action.button) {
             text = action.button.BTN_TEXT
             messageToSend = action.button.AFTER
             imageToSend = action.button.IMAGE
+            imageUrl = action.button.imageUrl
         }
+
+        console.log(imageUrl)
 
         if (text === ctx.message.text) {
             if (!ctx.session.btnHistory) ctx.session.btnHistory = []
             if (!ctx.session.btnHistory.includes(text) && text !== ctx.config.BACK_BTN.BTN_TEXT) ctx.session.btnHistory.push(text)
 
             if (action.scene) return await ctx.scene.enter(action.scene)
-            if (messageToSend && !action.handler) sendMessage({ ctx, message: messageToSend,  imageStrapi: imageToSend })
+            if (messageToSend && !action.handler) sendMessage({ ctx, message: messageToSend,  imageStrapi: imageToSend, imageUrl })
             if (action.handler) await action.handler(ctx, done)
 
             return

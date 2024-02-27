@@ -11,7 +11,8 @@ export const createHelpAnimalsScene = composeWizardScene(
             ctx,
             message: button.AFTER, 
             keyboard: getKeyboard(ctx, "help-animals").reply(),
-            imageStrapi: button.IMAGE
+            imageStrapi: button.IMAGE,
+            imageUrl: button.imageUrl
 
         })
         ctx.wizard.next()
